@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EduTech Online Learning Platform</title>
+    <link rel="stylesheet" href="ProjectCSS.css">
+</head>
+<body>
+
+<div class="main-container">
+        
+    <div class="sidebar">
+        <div class="logo-box">
+            <span class="logo-circle">e</span>
+            <b>EduTech</b>
+        </div>
+
+        <div class="profile-box">
+            <img src="profile_image.jpg" class="profile-pic">
+            <h3 id="uName"></h3>
+            <p id="uRole"></p>
+        </div>
+
+        <div class="menu-list">
+            <p class="active-menu">All Courses</p>
+            <p>Favourite</p>
+            <p>Friends</p>
+             <p>Chat</p>
+            <p>Statistics</p>
+        </div>
+
+
+        <div class="update-box">
+            <b>Update Course</b>
+            <p>by @edutech</p>
+        </div>
+    </div>
+
+    <div class="content-area">
+            
+        <div class="search-bar">
+            <input type="text" placeholder="Search Category..." class="search-input">
+            <button class="drop-btn">v</button>
+        </div>
+
+        <div class="header-row">
+            <div>
+                <h2>All Courses</h2>
+                <p id="ownedCount"></p>
+            </div>
+            <span class="view-label">View All</span>
+        </div>
+
+        <div class="tabs-row">
+            <span class="active-tab">Popular</span>
+            <span>Favourite</span>
+            <span>Recent</span>
+        </div>
+
+        <div class="courses-row">
+                
+            <div class="course-card card-one">
+                <div class="card-overlay">
+                    <span class="time-tag">250 min</span>
+                    <h3>UI/UX Design</h3>
+                    <p>25 lessons</p>
+                    <p class="desc-text">Learn modern interface layouts, wireframing, and interactive prototypes.</p>
+                    <button class="enroll-btn" id="btn1" onclick="enrollStudent('UI/UX Design', 'Design Course', 25, 'btn1')">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card card-two">
+                <div class="card-overlay">
+                    <span class="time-tag">150 min</span>
+                    <h3>Photography</h3>
+                    <p>10 lessons</p>
+                    <p class="desc-text">Master camera lighting, outdoor framing, and sunset landscape shots.</p>
+                     <button class="enroll-btn" id="btn2" onclick="enrollStudent('Photography', 'Creative Media', 10, 'btn2')">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card card-three">
+                <div class="card-overlay">
+                    <span class="time-tag">130 min</span>
+                    <h3>Architecture</h3>
+                    <p>17 lessons</p>
+                    <p class="desc-text">Explore 3D spatial modeling, structural planning, and modern exteriors.</p>
+                    <button class="enroll-btn" id="btn3" onclick="enrollStudent('Architecture', 'Structural Design', 17, 'btn3')">Enroll Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="bottom-section">
+                
+            <div class="started-box">
+                <h2>Progress</h2>
+                <p class="sub-text">Started Courses</p>
+
+                <div class="mini-card">
+                    <img src="MotionGraphic_image.jpg" class="mini-img">
+                    <div class="mini-info">
+                        <h4>Motion Graphic</h4>
+                        <p>Video Editing - 12 Lessons</p>
+                    </div>
+                    <div class="mini-circle">50%</div>
+                </div>
+
+                <div class="mini-card">
+                    <img src="Camera_image.jpg" class="mini-img">
+                    <div class="mini-info">
+                        <h4>Photography Course</h4>
+                        <p>Creative Lighting - 10 Lessons</p>
+                    </div>
+                    <div class="mini-circle">65%</div>
+                </div>
+            </div>
+
+            <div class="tracker-box">
+                <div class="big-circle">
+                    <h1>40%</h1>
+                    <p id="lessonText">Total 25 Lessons</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <div class="finish-row">
+                    <span>0%</span>
+                    <b>Finished</b>
+                    <span>100%</span>
+                </div>
+
+                <div class="active-course-box">
+                    <h4 id="activeTitle">UI Interaction Design</h4>
+                    <p id="activeSub">Design Course</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="ProjectJS.js"></script>
+</body>
+</html>

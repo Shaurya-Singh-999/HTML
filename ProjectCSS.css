@@ -1,0 +1,368 @@
+body{
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: mistyrose;
+    color: navy;
+}
+
+.main-container {
+    background-color: snow;
+    border-radius: 25px;
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+.sidebar{
+    width: 220px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+}
+
+.logo-box {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.logo-circle {
+    background-color: salmon;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.profile-pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.profile-box h3 {
+    margin: 12px 0 4px 0;
+    color: navy;
+}
+
+.profile-box p {
+    margin: 0;
+    color: gray;
+    font-size: 13px;
+}
+
+.menu-list {
+    text-align: left;
+    margin-top: 35px;
+    padding-left: 15px;
+}
+
+.menu-list p{
+    color: gray;
+    margin: 18px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.active-menu {
+    color: navy !important;
+    font-weight: bold;
+}
+
+.update-box {
+    background-color: mistyrose;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 45px;
+    font-size: 13px;
+}
+
+.update-box p {
+    margin: 4px 0 0 0;
+    color: gray;
+}
+
+.content-area {
+    flex: 1;
+    padding: 30px;
+}
+
+.search-bar{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.search-input {
+    width: 72%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 12px 0 0 12px;
+    background-color: white;
+}
+
+.drop-btn {
+    background-color: salmon;
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    font-size: 18px;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-row h2 {
+    margin: 0;
+}
+
+.header-row p {
+    margin: 4px 0 0 0;
+    color: gray;
+    font-size: 13px;
+}
+
+.enroll-btn{
+    background-color: salmon;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.enroll-btn:hover {
+    background-color: blue;
+}
+
+.view-label {
+    background-color: salmon;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+.tabs-row {
+    margin: 20px 0;
+}
+
+.tabs-row span {
+    margin-right: 25px;
+    color: gray;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.active-tab {
+    color: salmon !important;
+    font-weight: bold;
+    border-bottom: 2px solid salmon;
+    padding-bottom: 5px;
+}
+
+.courses-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.course-card {
+    flex: 1;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+}
+
+.card-one {
+    background-image: url('laptop_image.jpg');
+}
+
+.card-two {
+    background-image: url('photography_image.jpg');
+}
+
+.card-three {
+    background-image: url('architecture_image.jpg');
+}
+
+.card-overlay {
+    background-color: navy;
+    opacity: 0.88;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.time-tag {
+    float: right;
+    font-size: 12px;
+    background-color: turquoise;
+    color: navy;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card-overlay h3 {
+    margin: 0 0 5px 0;
+}
+
+.card-overlay p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+}
+
+.desc-text {
+    color: lightcyan;
+    line-height: 1.4;
+    padding-bottom: 8px;
+}
+
+.bottom-section{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.started-box {
+    flex: 1;
+}
+
+.started-box h2 {
+    margin: 0;
+}
+
+.sub-text {
+    color: gray;
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.mini-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mini-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-right: 15px;
+}
+
+.mini-info {
+    flex: 1;
+}
+
+.mini-info h4 {
+    margin: 0 0 5px 0;
+}
+
+.mini-info p {
+    margin: 0;
+    color: gray;
+    font-size: 12px;
+}
+
+.mini-circle {
+    border: 3px solid salmon;
+    color: navy;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 8px;
+    border-radius: 50%;
+}
+
+.tracker-box {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.big-circle {
+    border: 10px solid mistyrose;
+    border-top-color: salmon;
+    border-right-color: salmon;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-circle h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.big-circle p {
+    margin: 4px 0 0 0;
+    font-size: 11px;
+    color: gray;
+}
+
+.progress-bar {
+    background-color: mistyrose;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    background-color: salmon;
+    width: 40%;
+    height: 100%;
+}
+
+.finish-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.active-course-box {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.active-course-box h4 {
+    margin: 0 0 4px 0;
+}
+
+.active-course-box p {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
