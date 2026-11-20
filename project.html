@@ -21,8 +21,8 @@
         </div>
 
         <div class="menu-list">
-            <p class="active-menu">All Courses</p>
-            <p>Favourite</p>
+            <p class="active-menu" id="sideAll" onclick="showAll()">All Courses</p>
+            <p id="sideFav" onclick="showFav()">Favourite</p>
             <p>Friends</p>
              <p>Chat</p>
             <p>Statistics</p>
@@ -44,21 +44,21 @@
 
         <div class="header-row">
             <div>
-                <h2>All Courses</h2>
+                <h2 id="courseHeading">All Courses</h2>
                 <p id="ownedCount"></p>
             </div>
-            <span class="view-label">View All</span>
+            <span class="view-label" onclick="showAll()">View All</span>
         </div>
 
         <div class="tabs-row">
-            <span class="active-tab">Popular</span>
-            <span>Favourite</span>
+            <span class="active-tab" id="tabPop" onclick="showAll()">Popular</span>
+            <span id="tabFav" onclick="showFav()">Favourite</span>
             <span>Recent</span>
         </div>
 
         <div class="courses-row">
                 
-            <div class="course-card card-one">
+            <div class="course-card card-one" id="card1">
                 <div class="card-overlay">
                     <span class="time-tag">250 min</span>
                     <h3>UI/UX Design</h3>
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="course-card card-two">
+            <div class="course-card card-two" id="card2">
                 <div class="card-overlay">
                     <span class="time-tag">150 min</span>
                     <h3>Photography</h3>
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="course-card card-three">
+            <div class="course-card card-three" id="card3">
                 <div class="card-overlay">
                     <span class="time-tag">130 min</span>
                     <h3>Architecture</h3>

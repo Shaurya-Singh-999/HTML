@@ -44,3 +44,45 @@ function enrollStudent(t, cat, l, b_id) {
 
     document.getElementById(b_id).innerText = "Enrolled";
 }
+
+function showFav() {
+    document.getElementById("card1").style.display = "block";
+    document.getElementById("card2").style.display = "none";
+     document.getElementById("card3").style.display = "none";
+
+    document.getElementById("courseHeading").innerText = "Favourite Course";
+    document.getElementById("ownedCount").innerText = "1 favourite";
+
+    document.getElementById("tabFav").style.color = "salmon";
+    document.getElementById("tabFav").style.borderBottom = "2px solid salmon";
+    document.getElementById("tabFav").style.fontWeight = "bold";
+
+    document.getElementById("tabPop").style.color = "gray";
+    document.getElementById("tabPop").style.borderBottom = "none";
+
+    document.getElementById("sideFav").style.color = "navy";
+    document.getElementById("sideFav").style.fontWeight = "bold";
+    document.getElementById("sideAll").style.color = "gray";
+    document.getElementById("sideAll").style.fontWeight = "normal";
+}
+
+function showAll() {
+    document.getElementById("card1").style.display = "block";
+    document.getElementById("card2").style.display = "block";
+    document.getElementById("card3").style.display = "block";
+
+    document.getElementById("courseHeading").innerText = "All Courses";
+    document.getElementById("ownedCount").innerText = "10 owned";
+
+    document.getElementById("tabPop").style.color = "salmon";
+    document.getElementById("tabPop").style.borderBottom = "2px solid salmon";
+    document.getElementById("tabPop").style.fontWeight = "bold";
+
+    document.getElementById("tabFav").style.color = "gray";
+    document.getElementById("tabFav").style.borderBottom = "none";
+
+    document.getElementById("sideAll").style.color = "navy";
+    document.getElementById("sideAll").style.fontWeight = "bold";
+    document.getElementById("sideFav").style.color = "gray";
+    document.getElementById("sideFav").style.fontWeight = "normal";
+}

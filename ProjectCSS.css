@@ -69,8 +69,8 @@ body{
     font-size: 14px;
 }
 
-.active-menu {
-    color: navy !important;
+.menu-list .active-menu {
+    color: navy;
     font-weight: bold;
 }
 
@@ -155,6 +155,7 @@ body{
     font-weight: bold;
     font-size: 14px;
     display: inline-block;
+    cursor: pointer;
 }
 
 
@@ -167,23 +168,23 @@ body{
     color: gray;
     cursor: pointer;
     font-size: 14px;
+    padding-bottom: 5px;
 }
 
-.active-tab {
-    color: salmon !important;
+.tabs-row .active-tab {
+    color: salmon;
     font-weight: bold;
     border-bottom: 2px solid salmon;
-    padding-bottom: 5px;
 }
 
 .courses-row {
     display: flex;
-    justify-content: space-between;
     gap: 18px;
 }
 
 .course-card {
     flex: 1;
+    max-width: 32%;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
